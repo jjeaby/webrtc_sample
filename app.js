@@ -1,5 +1,4 @@
 var express = require('express');
-var app = express();
 var engines = require('consolidate');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -8,6 +7,8 @@ var fs = require('fs');
 
 var http = require('http');
 var https = require('https');
+
+var app = express();
 
 var options = {
   key: fs.readFileSync('private.pem'),
